@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCoder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">iCoder</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/blog.html"
+                >
+                  Blogs
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+              Search
+            </button>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-danger mx-3"
+              data-toggle="modal"
+              data-target="#loginModal"
+            >
+              LogIn
+            </button>
+  
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="loginModal"
+              tabindex="-1"
+              aria-labelledby="loginLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Email Adress"
+                          size="50"
+                        />
+                      </div>
+                      <br />
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Password"
+                          size="50"
+                        />
+                      </div>
+                      <br />
+                      <button type="submit" class="btn btn-success">LogIn</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-success"
+              data-toggle="modal"
+              data-target="#signupModal"
+            >
+              SignUp
+            </button>
+  
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="signupModal"
+              tabindex="-1"
+              aria-labelledby="signupModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleFormControlInput1"
+                          placeholder="name@example.com"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Set Password</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleFormControlInput1"
+                          placeholder="P@ssWord123"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1"
+                          >Interested in</label
+                        >
+                        <select
+                          class="form-control"
+                          id="exampleFormControlSelect1"
+                        >
+                          <option>Web Devlopment</option>
+                          <option>Digital Marketing</option>
+                          <option>Game Devlopment</option>
+                          <option>android App Devlopment</option>
+                          <option>iOS App Development</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1"
+                          >What is your Qualities?</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-success">
+                        SignUp
+                      </button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Information & Technology</h1>
+          <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+          <a class="btn btn-outline-warning" href="/contact.html">Contact Us</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block">
+            
+        </div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block">
+        </div>
+      </div>
+
+      <div id="web" class="d-md-flex justify-content-around flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Blogs</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            <img class="img-fluid" src="at1.jpg" alt="">
+        </div>
+        <br>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Web Development</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img class="img-fluid" src="at2.jpg" alt=""></div>
+        </div>
+      </div>
+     
+      </div>
+      
+      <div class="d-md-flex justify-content-between flex-md-equal w-100 my-5 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Coding</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <img class="img-fluid" src="at3.jpg" alt=""></div>
+          </div>
+          <br>
+          <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">iOS Devlopment</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+              <img class="img-fluid" src="at4.jpg" alt="">
+          </div>
+          </div>
+      </div>
+
+  <!-- ---foot--- -->
+  <footer class="container">
+    <p class="float-right"><a class="text-dark" href="#"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a></p>
+    <p>
+      © 2022-2023 iCoder, Inc. · <a href="#">Privacy</a> ·
+      <a href="#">Terms</a>
+    </p>
+  </footer>
+    <!-- --script-- -->
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
